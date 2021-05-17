@@ -1,3 +1,4 @@
+import { icons } from 'react-icons'
 import './Projects.css'
 
 const Projects = () => {
@@ -10,7 +11,8 @@ const Projects = () => {
            <div className="projects-content">
               <div className="card">
                   <div className="box">
-                  <i className="fas fa-film"></i>
+                  <div className="icon"> <icons className="fas fa-film"></icons></div>
+                 
                     <div className="text">
                       <a href="https://netflix-clone-627fc.web.app/">Netflix-Clone</a>
                     </div> 
@@ -24,7 +26,8 @@ const Projects = () => {
               </div>
               <div className="card">
                   <div className="box">
-                  <i className="fas fa-tshirt"></i>
+                  <div className="icon"> <icons className="fas fa-tshirt"></icons></div>
+                 
                     <div className="text">
                        <a href="https://github.com/shanu-droid/T-shirt-selling-ecommerce-website">E-Commerce(T-shirt store)</a>
                     </div> 
@@ -39,7 +42,8 @@ const Projects = () => {
               </div>
               <div className="card">
               <div className="box">
-              <i className="fas fa-file-video"></i>
+              <div className="icon"> <icons className="fas fa-file-video"></icons></div>
+              
                 <div className="text">
                   <a href="https://playaroundwithmovies.herokuapp.com/">PlayAround Movie Dasboard</a>
                 </div> 
@@ -53,7 +57,8 @@ const Projects = () => {
           </div>
           <div className="card short">
             <div className="box">
-              <i className="fas fa-clipboard-check"></i>
+            <div className="icon"><icons className="fas fa-clipboard-check"></icons></div>
+              
                 <div className="text">
                   <a href="https://shanu-droid.github.io/MyToDo/">Todo-App</a>
                 </div> 
@@ -64,7 +69,8 @@ const Projects = () => {
           </div>
               <div className="card short">
                   <div className="box">
-                  <i className="fas fa-file"></i>
+                  <div className="icon"><icons className="fas fa-file"></icons></div>
+                 
                     <div className="text">
                       <a href="https://reimbursement-page.herokuapp.com/">Reimbursment Page</a>
                     </div> 

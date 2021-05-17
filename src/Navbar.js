@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css'
 import {Link} from 'react-scroll'
+import { icons } from 'react-icons';
 
 const Navbar = () => {
     const [show, handleShow] = useState(false)
@@ -42,7 +43,7 @@ const Navbar = () => {
             
           </ul>
           <div className="menu-btn" onClick={handleToggle}>
-          <i className="fas fa-align-justify"></i>
+          <icons className="fas fa-align-justify"></icons>
           </div>
         </div>
           

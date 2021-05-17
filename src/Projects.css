@@ -70,7 +70,7 @@ section {
   transform: scale(1.03);
   background: #8b0649;
 }
-.projects .projects-content .card:hover .box i {
+.projects .projects-content .card:hover .box .icon {
   color: #fff;
 }
 .projects .projects-content .card .box .text a {
@@ -80,7 +80,7 @@ section {
   margin-bottom: 10px;
 }
 
-.projects .projects-content .card .box i {
+.projects .projects-content .card .box .icon {
   font-size: 50px;
   color: #8b0649;
   padding: 10px 10px;
@@ -106,7 +106,7 @@ section {
   .projects .projects-content .card.short {
     height: 250px;
   }
-  .projects .projects-content .card .box i {
+  .projects .projects-content .card .box .icon {
     font-size: 42px;
   }
   .projects .projects-content .card .text {
@@ -124,7 +124,7 @@ section {
     width: 100%;
     flex-wrap: nowrap;
   }
-  .projects .projects-content .card .box i {
+  .projects .projects-content .card .box .icon {
     font-size: 35px;
   }
   .projects .projects-content .card .box .text a {
@@ -149,7 +149,7 @@ section {
     display: flex;
     width: 100%;
   }
-  .projects .projects-content .card .box i {
+  .projects .projects-content .card .box .icon {
     font-size: 30px;
   }
   .projects .projects-content .card .box .text a {

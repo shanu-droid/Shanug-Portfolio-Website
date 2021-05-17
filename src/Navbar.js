@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react';
 import './Navbar.css'
 import {Link} from 'react-scroll'
@@ -43,7 +45,7 @@ const Navbar = () => {
             
           </ul>
           <div className="menu-btn" onClick={handleToggle}>
-          <icons className="fas fa-align-justify"></icons>
+          <FontAwesomeIcon icon={faAlignJustify} />
           </div>
         </div>
           

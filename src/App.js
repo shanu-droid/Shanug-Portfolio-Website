@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 import Navbar from './Navbar'
 import Home from './Home'
@@ -36,7 +38,7 @@ const scrollToTop = () =>{
   return (
     <div className="App">
     <div className={`scroll-up-btn ${show  && "show"}`}>
-      <i className="fas fa-angle-up" onClick={scrollToTop}></i>
+      <FontAwesomeIcon icon={faAngleUp} onClick={scrollToTop}/>
     </div>
      <Navbar/>
      <Home/>

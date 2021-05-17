@@ -1,4 +1,5 @@
-import { icons } from 'react-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilm, faTshirt, faFileVideo, faClipboardCheck, faFile } from '@fortawesome/free-solid-svg-icons'
 import './Projects.css'
 
 const Projects = () => {
@@ -11,7 +12,7 @@ const Projects = () => {
            <div className="projects-content">
               <div className="card">
                   <div className="box">
-                  <div className="icon"> <icons className="fas fa-film"></icons></div>
+                  <div className="icon"><FontAwesomeIcon icon={faFilm} /></div>
                  
                     <div className="text">
                       <a href="https://netflix-clone-627fc.web.app/">Netflix-Clone</a>
@@ -26,7 +27,7 @@ const Projects = () => {
               </div>
               <div className="card">
                   <div className="box">
-                  <div className="icon"> <icons className="fas fa-tshirt"></icons></div>
+                  <div className="icon"><FontAwesomeIcon icon={faTshirt} /></div>
                  
                     <div className="text">
                        <a href="https://github.com/shanu-droid/T-shirt-selling-ecommerce-website">E-Commerce(T-shirt store)</a>
@@ -42,7 +43,7 @@ const Projects = () => {
               </div>
               <div className="card">
               <div className="box">
-              <div className="icon"> <icons className="fas fa-file-video"></icons></div>
+              <div className="icon"><FontAwesomeIcon icon={faFileVideo} /></div>
               
                 <div className="text">
                   <a href="https://playaroundwithmovies.herokuapp.com/">PlayAround Movie Dasboard</a>
@@ -57,7 +58,7 @@ const Projects = () => {
           </div>
           <div className="card short">
             <div className="box">
-            <div className="icon"><icons className="fas fa-clipboard-check"></icons></div>
+            <div className="icon"><FontAwesomeIcon icon={faClipboardCheck} /></div>
               
                 <div className="text">
                   <a href="https://shanu-droid.github.io/MyToDo/">Todo-App</a>
@@ -69,7 +70,7 @@ const Projects = () => {
           </div>
               <div className="card short">
                   <div className="box">
-                  <div className="icon"><icons className="fas fa-file"></icons></div>
+                  <div className="icon"><FontAwesomeIcon icon={faFile} /></div>
                  
                     <div className="text">
                       <a href="https://reimbursement-page.herokuapp.com/">Reimbursment Page</a>

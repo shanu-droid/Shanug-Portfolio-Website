@@ -1,0 +1,97 @@
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+section {
+  font-family: "Poppins", sans-serif;
+}
+.certi {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #111;
+}
+.certi .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.certi .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+.certi .title::after {
+  content: "what I learned";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 18px;
+  color: #8b0649;
+  padding: 5px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.certi .allcerti {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.certi .allcerti::-webkit-scrollbar {
+  display: none;
+}
+
+.certi .allcerti .card {
+  background: #111;
+  padding-right: 30px;
+}
+
+.certi .allcerti .card img {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.certi .allcerti .card img:hover {
+  transform: scale(1.04);
+}
+.certi .allcerti .card .text {
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .certi .allcerti .card img {
+    height: 190px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 420px) {
+  .max-width {
+    max-width: 600px;
+    padding: 0 40px;
+  }
+  .certi .title {
+    font-size: 30px;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+  }
+
+  .certi .title::after {
+    left: 50%;
+    font-size: 17px;
+  }
+  .certi .allcerti {
+    display: flex;
+    width: 100%;
+  }
+}

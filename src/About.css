@@ -1,0 +1,131 @@
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+section {
+  padding: 100px 0;
+}
+.about {
+  font-family: "Poppins", sans-serif;
+}
+.about .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.about .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+.about .title::after {
+  content: "who I am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 18px;
+  color: #8b0649;
+  padding: 5px;
+  background: rgb(218, 218, 218);
+  transform: translateX(-50%);
+}
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 600px;
+  width: 400px;
+  object-fit: cover;
+  border: 2px solid #8b0649;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.about .about-content .left img:hover {
+  transform: scale(1.05);
+}
+.about .about-content .right {
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: #8b0649;
+}
+.about .about-content .right p {
+  text-align: left;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background: #8b0649;
+  color: white;
+  font-size: 20px;
+  padding: 5px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid violet;
+  font-weight: 500;
+}
+
+.about .about-content .right a:hover {
+  color: #8b0649;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #8b0649;
+}
+
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 480px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .about .title {
+    font-size: 30px;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+  }
+
+  .about .title::after {
+    left: 50%;
+    font-size: 15px;
+  }
+}

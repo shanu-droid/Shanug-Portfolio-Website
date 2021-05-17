@@ -37,7 +37,7 @@ const Navbar = () => {
          
           <ul className={`menu ${isActive && "active"}`} >
             <li ><Link className="tag" to="home" spy={true} smooth={true} onClick={handleToggle}>Home</Link></li>
-            <li ><Link className="tag" to="about" spy={true} smooth={true}>About</Link></li>
+            <li ><Link className="tag" to="about" spy={true} smooth={true} onClick={handleToggle}>About</Link></li>
             <li ><Link className="tag" to="projects" spy={true} smooth={true} onClick={handleToggle}>Projects</Link></li>
             <li ><Link className="tag" to="skills" spy={true} smooth={true} onClick={handleToggle}>Skills</Link></li>
             <li ><Link className="tag" to="certi" spy={true} smooth={true}  onClick={handleToggle}>Certificates</Link></li>
